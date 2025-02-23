@@ -5,9 +5,10 @@
 }
 
 .container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 20px;
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
 }
 
 /* 
@@ -122,6 +123,15 @@
 /*********PRODUCT INFO END*********/
 
 /*********FOOTER BEGIN*********/
+footer{
+    color: aliceblue;
+    background-color: #784F41;
+}
+
+.footer-section i{
+    color: #784F41;
+    
+}
 
 hr{
     border-top: 1px solid #ccc;
@@ -133,6 +143,13 @@ hr{
 
 .copyright-footer{
     font-family: "Bodoni Moda SC";
+    background-color: #784F41;
 }
 
 /*********FOOTER END*********/
+
+/*********T&S*********/
+.TS-header-color{
+    background-color: #784F41;
+}
+/*********T&S*********/
