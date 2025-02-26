@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1</title>
     <link rel="stylesheet" href="./styles.css">
+    <!-- Carousel Javascript -->
+    <script src="script.js" defer> </script>
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/0c00240b03.js" crossorigin="anonymous"></script>
@@ -57,33 +59,57 @@
         <div class="w-3/4 flex justify-center gap-4">
 
             <!-- PHOTO CAROSEL -->
-            <div id="photo-carousel" class="text-center w-1/2 relative h-screen" aria-label="Shirts carousel">
-                <!-- Buttons -->
-                <button class="carousel-button prev">&#8594</button>
-                <button class="carousel-button next ">&#8592</button>
-                <!-- Photo list -->
-                <ul class="list-none m-0 p-0">
-                    <li class="slide" data-active>
-                    <img src="./img/Adult T-shirt.png" alt="Adult T-shirt" class="block w-full h-full object-cover object-top">
-                    </li>
-                    <li class="slide">
-                        <img src="./img/Women T-shirt.png" alt="Adult T-shirt" class="block w-full h-full object-cover object-top">
-                    </li>
-                    <li class="slide">
-                        <img src="./img/Kid T-shirt.png" alt="Adult T-shirt" class="block w-full h-full object-cover object-top">
-                    </li>
-                    <li class="slide">
-                        <img src="./img/Toddler T-shirt.png" alt="Adult T-shirt" class="block w-full h-full object-cover object-top">
-                    </li>
-                    <li class="slide">
-                        <img src="./img/Baby T-shirt.png" alt="Adult T-shirt" class="block w-full h-full object-cover object-top">
-                    </li>
-                </ul>
+            <div id="photo-carousel" class="text-center w-1/2 relative h-screen" aria-label="Shirts carousel" data-carousel>
+                <div class="carousel-container relative w-full h-11/12">
+                    <div class="carousel flex">
+
+                        <!-- Images -->
+                        <div class="slide h-full flex justify-center content-center relative min-w-full">
+                            <img  src="./img/Adult T-shirt.png" alt="Adult T-shirt" class="w-full h-full object-cover">
+                            <div class="slide-number">1 / 5</div>
+                        </div>
+
+                        <div class="slide h-full flex justify-center content-center relative min-w-full">
+                            <img  src="./img/Women T-shirt.png" alt="Women T-shirt" class="w-full h-full object-cover">
+                            <div class="slide-number">2 / 5</div>
+                        </div>
+
+                        <div class="slide h-full flex justify-center content-center relative min-w-full">
+                            <img  src="./img/Kid T-shirt.png" alt="Kid T-shirt" class="w-full h-full object-cover">
+                            <div class="slide-number">3 / 5</div>
+                        </div>
+
+                        <div class="slide h-full flex justify-center content-center relative min-w-full">
+                            <img  src="./img/Toddler T-shirt.png" alt="Placeholder Image 4" class="w-full h-full object-cover">
+                            <div class="slide-number">4 / 5</div>
+                        </div>
+
+                        <div class="slide h-full flex justify-center content-center relative min-w-full">
+                            <img  src="./img/Baby T-shirt.png" alt="Baby T-shirt" class="w-full h-full object-cover">
+                            <div class="slide-number">5 / 5</div>
+                        </div>
+                    </div>
+
+                    <!-- Buttons -->
+                    <button class="navigation-button prev-button">&#10094;</button>
+                    <button class="navigation-button next-button">&#10095;</button>
+                    
+                    <!-- Dots -->
+                    <div class="dots-container">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                        <span class="dot" data-index="3"></span>
+                        <span class="dot" data-index="4"></span>
+                    </div>
+                </div>
             </div>
+
+
             <!-- WRITTEN INFORMATION -->
             <div id="product-info" class="text-center w-1/2">
 
-                <!-- put a modal here with billing info 5 input fieldsdk -->
+                <!-- put a modal here with billing info 5 input fields -->
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique maiores suscipit doloremque sapiente blanditiis, nostrum hic provident quibusdam, tempora in tempore delectus reiciendis! Qui, vel?
             </div>
         </div>
