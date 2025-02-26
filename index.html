@@ -53,16 +53,39 @@
     <!-- END OF NAVIGATION -->
      
     <!-- MIDDLE AREA PRODUCT PICTURES AND DETAILS -->
-    <section class="flex">
-        <!-- PHOTO CAROSEL -->
-        <div class="carousel">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio molestiae blanditiis, nemo tenetur culpa accusantium recusandae magni animi assumenda ipsam illo soluta ea atque consequatur?
-        </div>
-        <!-- WRITTEN INFORMATION -->
-        <div class="product-info">
+    <section class="flex  justify-center">
+        <div class="w-3/4 flex justify-center gap-4">
 
-            <!-- put a modal here with billing info 5 input fieldsdk -->
+            <!-- PHOTO CAROSEL -->
+            <div id="photo-carousel" class="text-center w-1/2 relative h-screen" aria-label="Shirts carousel">
+                <!-- Buttons -->
+                <button class="carousel-button prev">&#8594</button>
+                <button class="carousel-button next ">&#8592</button>
+                <!-- Photo list -->
+                <ul class="list-none m-0 p-0">
+                    <li class="slide" data-active>
+                    <img src="./img/Adult T-shirt.png" alt="Adult T-shirt" class="block w-full h-full object-cover object-top">
+                    </li>
+                    <li class="slide">
+                        <img src="./img/Women T-shirt.png" alt="Adult T-shirt" class="block w-full h-full object-cover object-top">
+                    </li>
+                    <li class="slide">
+                        <img src="./img/Kid T-shirt.png" alt="Adult T-shirt" class="block w-full h-full object-cover object-top">
+                    </li>
+                    <li class="slide">
+                        <img src="./img/Toddler T-shirt.png" alt="Adult T-shirt" class="block w-full h-full object-cover object-top">
+                    </li>
+                    <li class="slide">
+                        <img src="./img/Baby T-shirt.png" alt="Adult T-shirt" class="block w-full h-full object-cover object-top">
+                    </li>
+                </ul>
+            </div>
+            <!-- WRITTEN INFORMATION -->
+            <div id="product-info" class="text-center w-1/2">
 
+                <!-- put a modal here with billing info 5 input fieldsdk -->
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique maiores suscipit doloremque sapiente blanditiis, nostrum hic provident quibusdam, tempora in tempore delectus reiciendis! Qui, vel?
+            </div>
         </div>
     </section>
     <!-- END OF MIDDLE AREA PRODUCT PICTURES AND DETAILS -->
@@ -91,6 +114,8 @@
                     <li><a href="https://tenor.com/view/no-refunds-gif-25745147" target="_blank">Refund Policy</a></li>
                 </ul>
             </div>
+
+
             <!-- Icon Section -->
             <div class="footer-section flex flex-col items-center gap-4">
                 <h3 class="underline ">Connect With Us</h3>
