@@ -1,5 +1,4 @@
-/* Colors chosen from Coolors Check coolors.jpeg in img file
-or Link here: https://coolors.co/784f41-f0f8ff-45b1e8-04080f-0b3142 */
+/* Colors chosen from Coolors Check Link here: https://coolors.co/784f41-f0f8ff-45b1e8-04080f-0b3142 */
 
 * {
     box-sizing: border-box;
@@ -8,6 +7,9 @@ or Link here: https://coolors.co/784f41-f0f8ff-45b1e8-04080f-0b3142 */
 body{
     margin:0;
     padding: 0;
+    font-family: "Atkinson Hyperlegible Next", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #04080F;
+    overflow-x: hidden;
 }
 
 .container {
@@ -122,7 +124,7 @@ body{
 
 
 /*********CAROUSEL BEGIN*********/
-.carousel-container {
+.middle-container {
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -148,19 +150,25 @@ body{
     justify-content: center;
     align-items: center;
     transition: background-color 0.3s;
-    z-index: 10;
+    z-index: 2;
 }
 
 .navigation-button:hover {
-    background-color: rgba(255, 255, 255, 0.9);
+    color: #45B1E8;
+    background-color: #04080F;
 }
 
 .prev-button {
     left: 20px;
+    background-color: #0B3142;
+    color: aliceblue;
 }
 
 .next-button {
     right: 20px;
+    background-color: #0B3142;
+    color: aliceblue;
+    
 }
 
 .dots-container {
@@ -198,6 +206,57 @@ body{
 /*********CAROUSEL END*********/
 
 /*********PRODUCT INFO START*********/
+#product-info button{
+    background-color: #0B3142;
+    color: aliceblue;
+    cursor:pointer;
+}
+
+#product-info button:hover{
+    box-shadow: 2px 2px 2px #0B314266;
+}
+/* Modal */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 5; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .form-group{
+    color: #04080F;
+  }
 
 
 /*********PRODUCT INFO END*********/
@@ -233,7 +292,10 @@ hr{
 }
 
 .copyright-footer{
-    font-family: "Bodoni Moda SC";
+    font-family: "Bodoni Moda SC",sans-serif;
+    background-color: #784F41;
+}
+.copyright-footer div p{
     background-color: #784F41;
 }
 
